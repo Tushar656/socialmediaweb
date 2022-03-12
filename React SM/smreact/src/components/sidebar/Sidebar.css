@@ -1,0 +1,65 @@
+.SideBar{
+    flex: 3;
+    height: calc(100vh - 50px);
+    overflow-y: hidden;
+    position: sticky;
+    top: 50px;
+    background-color: rgb(251, 251, 253);
+}
+.SideBar:hover{
+    overflow-y: scroll;
+}
+.SideBar::-webkit-scrollbar{
+    width: 7.3px;
+}
+.SideBar::-webkit-scrollbar-track{
+    background-color: rgb(245, 245, 245);
+    /* visibility: hidden; */
+}
+.SideBar::-webkit-scrollbar-thumb{
+    background-color: rgb(196, 196, 196);
+    border-radius: 20px;
+    /* visibility: hidden; */
+}
+.SidebarWrapper{
+    padding: 5px 10px;
+    padding-right: 2px;
+}
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebarListItems{
+    display: flex;
+    height: 42px;
+    align-items: center;
+    padding: 2px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sidebarListItems:hover{
+    background-color: rgb(235, 235, 235);
+}
+.sidebarIcon{
+    margin-right: 15px;
+    font-size: 26px !important;
+}
+.sidebarListItemText{
+    font-size: 17px;
+    margin-left: 4px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: rgb(105, 105, 105);
+}
+.sidebarBtn{
+    font-size: 16px;
+    height: 22px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.sidebarHR{
+    margin: 23px 0px;
+}

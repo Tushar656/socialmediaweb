@@ -1,0 +1,141 @@
+.topBarContainor{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(53, 164, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+.topBarLeft{
+    flex: 3;
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.topBarLeft .logo{
+    color: white;
+}
+
+.topBarCenter{
+    flex: 5;
+    width: 100%;
+}
+.searchBar{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.searchBar .searchIcon{
+    font-size: 20px !important;
+    margin-left: 12px;
+    margin-right: 2px;
+}
+.topBarCenter input{
+    height: 28px;
+    width: 85%;
+    border: none;
+    font-size: 19px;
+    padding: 0px 10px;
+}
+.topBarCenter input:focus{
+    outline: none;
+}
+
+.topBarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.topBarRight .topBarLink{
+    margin-right: 12px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.topbarIconBox{
+    display: flex;
+}
+.topBarIcons{
+    margin-right: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.topBarIconBadge{
+    position: absolute;
+    top: -5px;
+    right: -1px;
+    height: 13px;
+    min-width: 13px;
+    background-color: red;
+    font-size: 11px;
+    padding: 0.8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbarProfileinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topBarImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.topbarArrow{
+    /* font-size: 16px !important; */
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.topbarArrow:hover{
+    background-color: rgb(118, 185, 240);
+}
+.topbarArrow:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translate(0);
+    transition-delay: 0s, 0s, 0.1s;
+}
+.dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0.3em);
+    transition: all 0.5s ease 0s, visibility 1s linear 0s, z-index 0s linear 0.01s;
+    visibility: hidden;
+    opacity: 0;
+    right: 2px;
+    top: 50px;
+    /* padding: px; */
+    z-index: -1;
+}
+.dropdown li{
+    background-color: rgb(118, 185, 240);
+    list-style: none;
+    padding: 7px 10px;
+    min-width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+.dropdown li:hover{
+    background-color: rgb(57, 154, 235);
+}
